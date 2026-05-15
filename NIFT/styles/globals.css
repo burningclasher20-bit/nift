@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background-color: #EFEBE0;
+  color: #3E4C31;
+  font-family: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #EFEBE0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(176, 91, 59, 0.25);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.halo-border {
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.halo-border:hover {
+  box-shadow: 0 0 0 1px rgba(176, 91, 59, 0.25), 0 18px 40px rgba(62, 76, 49, 0.08);
+  transform: translateY(-2px);
+}
